@@ -8,6 +8,20 @@ def is_repeat_arguments(first_argument, second_argument):
             print("true")
             return
     print("false")
+
+#similaire à :
+
+def is_repeat_arguments(first_argument, second_argument):
+    i = 0
+    while i <= len(first_argument) - len(second_argument):
+        j = 0
+        while j < len(second_argument) and first_argument[i+j] == second_argument[j]:
+            j += 1
+        if j == len(second_argument):
+            print("true")
+            return
+        i += 1
+    print("false")
    
 # Gestion d'erreurs :
 
