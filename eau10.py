@@ -13,7 +13,6 @@ def find_index(arguments):
     else:
         return -1
         
-
 # Gestion d'erreurs :
 
 def is_valid_length(arguments):
@@ -28,7 +27,6 @@ def get_arguments():
     arguments = sys.argv[1:]
     return arguments  
 
-
 # Résolution :
 
 def print_index():
@@ -36,8 +34,6 @@ def print_index():
     if not is_valid_length(arguments):
         return
     print(find_index(arguments))
-
-    
 
 # Affichage :
 
