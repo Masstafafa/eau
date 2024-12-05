@@ -9,7 +9,7 @@ def my_select_sort(array):
         for j in range(i+1, len(array)):
             if array[j] < array[min]:
                 min = j
-        array[i], array[min] = array[min], array[i]        
+                array[i], array[min] = array[min], array[i]        
     return " ".join(map(str, array))
     
 # Gestion d'erreurs :
