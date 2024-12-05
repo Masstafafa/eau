@@ -30,10 +30,13 @@ def resolve():
     arguments = get_arguments()
     if not is_valid_length(arguments):
         return
-    print(is_number(arguments))
+    is_number(arguments)
+    result = is_number(arguments)
+    if result:
+        print("true")
+    else:
+        print("false")
     
-    
-
 # Affichage :
 
 resolve()
