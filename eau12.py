@@ -9,9 +9,8 @@ def my_bubble_sort(array):
         for j in range(n-i-1):
             if array[j] > array[j+1]:
                 array[j], array[j+1] = array[j+1], array[j]
-    return" ".join(map(str, array))
+    return " ".join(map(str, array))
     
-
 # Gestion d'erreurs :
 
 def is_valid_length(arguments):
