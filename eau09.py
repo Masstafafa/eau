@@ -1,7 +1,6 @@
 import sys
 
 # Fonctions utilisées:
-
 def get_values(arguments):
     arguments.sort()
     number_min = int(arguments[0])
@@ -12,7 +11,6 @@ def get_values(arguments):
 
 
 # Gestion d'erreurs :
-
 def is_valid_length(arguments):
     if len(arguments) != 2:
         print("Erreur : Merci d'indiquer deux arguments qui sont des chiffres")
@@ -27,13 +25,11 @@ def is_valid_arguments(arguments):
     return True
 
 # Récupération de données :
-
 def get_arguments():
     arguments = sys.argv[1:]
     return arguments
 
 # Résolution :
-
 def display_numbers():
     arguments = get_arguments()
     if not is_valid_length(arguments):
@@ -42,7 +38,5 @@ def display_numbers():
         return
     get_values(arguments)
     
-
 # Affichage :
-
 display_numbers()
